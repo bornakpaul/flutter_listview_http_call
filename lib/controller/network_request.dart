@@ -5,8 +5,8 @@ import 'package:flutter_listview/model/ModelData.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkRequest {
-  static Uri url =
-      Uri.parse('https://jsonplaceholder.typicode.com/posts?_limit=10&_page=1');
+  //'https://jsonplaceholder.typicode.com/posts?_limit=10&_page=1'
+  static Uri url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
 
   static List<ModelData> parseModelData(String responseData) {
     var list = json.decode(responseData) as List<dynamic>;
